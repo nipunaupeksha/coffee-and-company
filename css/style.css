@@ -12,8 +12,8 @@ body {
 }
 
 .logo {
-    margin-top:5px;
-    margin-left:5px;
+    margin-top: 5px;
+    margin-left: 5px;
     z-index: 25;
 }
 
@@ -29,15 +29,15 @@ nav {
 
 nav .nav-item {
     text-transform: uppercase;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 10px;
-    padding-right:10px;
+    padding-right: 10px;
     text-align: center;
     max-height: 100px;
 }
 
 .nav-item {
-    border-left: 1px solid #32407b;
+    border-left: 1px solid #fff;
     color: #f3f3f3;
 }
 
@@ -46,8 +46,8 @@ nav .nav-item {
 }
 
 .logo img {
-    min-height:150px;
-    min-width:150px;
+    min-height: 150px;
+    min-width: 150px;
     max-height: 150px;
     max-width: 150px;
     border-radius: 50%;
@@ -108,14 +108,43 @@ input[name="r"] {
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(120, 120, 120, 0.5);
-    background-image: radial-gradient(black 60%, transparent 3%);
-    background-size: 2px 2px;
+    background: url(../img/gridtile.png);
 }
 
 .slide {
     width: 20%;
     transition: 0.6s;
+}
+
+.slide .welcome-line {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    z-index: 1;
+}
+
+.welcome-line{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slide .coffee-line {
+    position: absolute;
+    display: flex;
+    top:58%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    z-index: 1;
+}
+
+.coffee-line{
+    font-size:25px;
+    font-weight:20;
+    transition: 0.5s ease;
 }
 
 .slide img {
