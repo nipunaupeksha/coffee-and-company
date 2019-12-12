@@ -30,12 +30,14 @@ nav {
 nav .nav-item {
     text-transform: uppercase;
     padding-top: 10px;
-    margin: 10px;
+    padding-left: 10px;
+    padding-right:10px;
     text-align: center;
     max-height: 100px;
 }
 
 .nav-item {
+    border-left: 1px solid #32407b;
     color: #f3f3f3;
 }
 
@@ -49,7 +51,7 @@ nav .nav-item {
     max-height: 150px;
     max-width: 150px;
     border-radius: 50%;
-    box-shadow: 10px 10px 5px;
+    box-shadow: 5px 5px 5px;
 }
 
 /*Slideshow*/
