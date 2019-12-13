@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: red;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -39,6 +38,8 @@ nav .nav-item {
 .nav-item {
     border-left: 1px solid #fff;
     color: #f3f3f3;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .nav-item:hover {
@@ -144,8 +145,57 @@ input[name="r"] {
 .coffee-line{
     font-size:25px;
     font-weight:20;
-    transition: 0.5s ease;
 }
+.transform-inactive{
+    animation: a 2s;
+}
+.transform-active{
+    animation:anim 2s;
+}
+@keyframes anim{
+	0%{
+		margin-top:60px;
+        opacity: 0.2;
+	}
+    25%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+	100%{
+		margin-top:0px;
+        opacity: 1.0;
+	}
+    
+}
+
+@keyframes a{
+    0%{
+		margin-top:0px;
+        opacity: 1.0;
+	}
+    25%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.4;
+    }
+    90%{
+        opacity: 0.2;
+    }
+	100%{
+		margin-top:60px;
+        opacity: 0.0;
+	}
+}
+
 
 .slide img {
     width: 100%;
@@ -170,4 +220,36 @@ input[name="r"] {
 
 #r5:checked ~ .s1 {
     margin-left: -80%;
+}
+/*content*/
+.home-section{
+    height:83vh;
+}    
+.about-section{
+    color:#fff;
+    padding-top:150px;
+    width:100%;
+    height:100vh;
+    background: #000;z-index:555;
+}
+.products-section{
+    color:#000;
+    padding-top:50px;
+    width:100%;
+    height:100vh;
+    background: #fff;z-index:555;
+}
+.testimonials-section{
+    color:#fff;
+    padding-top:150px;
+    width:100%;
+    height:100vh;
+    background: #000;z-index:555;
+}
+.contact-section{
+    color:#000;
+    padding-top:50px;
+    width:100%;
+    height:100vh;
+    background: #fff;z-index:555;
 }

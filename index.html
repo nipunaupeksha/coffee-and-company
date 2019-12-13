@@ -8,54 +8,129 @@
     <link rel="stylesheet" href="css/style.css">
     <!--font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--jquery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="nav-div">
-        <div class="logo"><img src="/img/logo.png" alt=""></div>
-        <nav class="nav-bar">
-            <div class="home nav-item">Home</div>
-            <div class="about nav-item">About</div>
-            <div class="products nav-item">Products</div>
-            <div class="testimonials nav-item">Testimonials</div>
-            <div class="contact nav-item">Contact</div>
-            <div class="hours nav-item">Hours</div>
-            <div class="location nav-item">Location</div>
-            <div class="map nav-item">Map</div>
-        </nav>
+    <div class="body-wrapper">
+        <section class="home-section">
+            <div class="nav-div">
+                <div class="logo"><img src="/img/logo.png" alt=""></div>
+                <nav class="nav-bar">
+                    <div class="home nav-item">Home</div>
+                    <div class="about nav-item">About</div>
+                    <div class="products nav-item">Products</div>
+                    <div class="testimonials nav-item">Testimonials</div>
+                    <div class="contact nav-item">Contact</div>
+                    <div class="hours nav-item">Hours</div>
+                    <div class="location nav-item">Location</div>
+                    <div class="map nav-item">Map</div>
+                </nav>
+            </div>
+            <div class="slideshow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <div class="slide s1">
+                        <img src="img/4.jpg" alt="">
+                        <div class="welcome-line">Welcome to Coffee and Company</div>
+                        <div class="coffee-line">For the love of coffee and people!</div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">Hello </section>
+        <section id="products" class="products-section">products </section>
+        <section id="testimonials" class="testimonials-section">testimonials </section>
+        <section id="contact" class="contact-section">contact </section>
+
     </div>
-    <div class="slideshow middle">
-        <div class="slides">
-            <input type="radio" name="r" id="r1" >
-            <input type="radio" name="r" id="r2">
-            <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
-            <input type="radio" name="r" id="r5">
-            <div class="slide s1">
-                <img src="img/1.jpg" alt="">
-                <div class="welcome-line">Welcome to Coffee and Company</div>
-                <div class="coffee-line">For the love of coffee and people!</div>
-            </div>
-            <div class="slide">
-                <img src="img/2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="img/3.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="img/4.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="img/5.jpg" alt="">
-            </div>
-        </div>
-        <div class="navigation">
-            <label for="r1" class="bar"></label>
-            <label for="r2" class="bar"></label>
-            <label for="r3" class="bar"></label>
-            <label for="r4" class="bar"></label>
-            <label for="r5" class="bar"></label>
-        </div>
-    </div>
+
+
+    <!--slider animation manipulation-->
+    <script>
+        $(document).ready(function() {
+            $('#r1').click(function() {
+                $('.welcome-line').show();
+                $('.coffee-line').hide();
+                $('.welcome-line').addClass('transform-active');
+                setTimeout(function() {
+                    $('.coffee-line').addClass('transform-active');
+                    $('.coffee-line').show();
+                }, 2000);
+                setTimeout(function() {
+                    $('.coffee-line').removeClass('transform-active');
+                    $('.coffee-line').addClass('transform-inactive');
+                }, 4000);
+                setTimeout(function() {
+                    $('.coffee-line').hide();
+                }, 6000);
+                setTimeout(function() {
+                    $('.welcome-line').removeClass('transform-active');
+                    $('.welcome-line').addClass('transform-inactive');
+
+                }, 6000);
+                setTimeout(function() {
+                    $('.welcome-line').hide();
+                }, 8000);
+
+            });
+            $('#r2').click(function() {
+                $('.welcome-line').removeClass('transform-active');
+                $('.coffee-line').removeClass('transform-active');
+                $('.welcome-line').removeClass('transform-inactive');
+                $('.coffee-line').removeClass('transform-inactive');
+                $('.welcome-line').hide();
+                $('.coffee-line').hide();
+            });
+            $('#r3').click(function() {
+                $('.welcome-line').removeClass('transform-active');
+                $('.coffee-line').removeClass('transform-active');
+                $('.welcome-line').removeClass('transform-inactive');
+                $('.coffee-line').removeClass('transform-inactive');
+                $('.welcome-line').hide();
+                $('.coffee-line').hide();
+            });
+            $('#r4').click(function() {
+                $('.welcome-line').removeClass('transform-active');
+                $('.coffee-line').removeClass('transform-active');
+                $('.welcome-line').removeClass('transform-inactive');
+                $('.coffee-line').removeClass('transform-inactive');
+                $('.welcome-line').hide();
+                $('.coffee-line').hide();
+            });
+            $('#r5').click(function() {
+                $('.welcome-line').removeClass('transform-active');
+                $('.coffee-line').removeClass('transform-active');
+                $('.welcome-line').removeClass('transform-inactive');
+                $('.coffee-line').removeClass('transform-inactive');
+                $('.welcome-line').hide();
+                $('.coffee-line').hide();
+            });
+        });
+    </script>
 
 </body></html>
