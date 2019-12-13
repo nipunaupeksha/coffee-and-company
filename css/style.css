@@ -35,15 +35,22 @@ nav .nav-item {
     max-height: 100px;
 }
 
-.nav-item {
+.nav-item{
     border-left: 1px solid #fff;
+}
+
+.nav-item a{
+    text-decoration: none;
     color: #f3f3f3;
     font-size: 15px;
     font-weight: bold;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
     color: #6b8b33;
+}
+.nav-item:hover{
+    transform: scale(1.02);
 }
 
 .logo img {
@@ -225,31 +232,73 @@ input[name="r"] {
 .home-section{
     height:83vh;
 }    
+/*about-section*/
 .about-section{
     color:#fff;
-    padding-top:150px;
+    padding-top:100px;
     width:100%;
     height:100vh;
-    background: #000;z-index:555;
+    background: #000;
+    z-index:1;
 }
+
+.s2{
+    background: url(../img/pikolo1.jpg)no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+    display: flex;
+	align-items: center;
+}
+.about-description{
+    padding-top:80px;
+    padding-bottom:80px;
+    background: #dfddc7;
+}
+.about-text{
+    font-weight:700;
+    text-decoration: underline;
+    margin:0;
+	background: #dfddc7;
+    text-align: center;
+	color:#333;
+	padding:10px 20px;
+	text-transform: uppercase;
+}
+.description{
+    padding-top:0;
+    font-size: 15px;
+    padding-left: 100px;
+    padding-right:100px;
+    color:#000;
+    background: #dfddc7;
+    text-align: center;
+}
+
+/*products-section*/
 .products-section{
     color:#000;
     padding-top:50px;
     width:100%;
     height:100vh;
-    background: #fff;z-index:555;
+    background: #fff;
+    z-index:555;
 }
 .testimonials-section{
     color:#fff;
     padding-top:150px;
     width:100%;
     height:100vh;
-    background: #000;z-index:555;
+    background: #000;
+    z-index:555;
 }
 .contact-section{
     color:#000;
     padding-top:50px;
     width:100%;
     height:100vh;
-    background: #fff;z-index:555;
+    background: #fff;
+    z-index:555;
 }
