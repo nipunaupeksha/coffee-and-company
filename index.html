@@ -24,10 +24,8 @@
                     <div class="about nav-item"><a href="#about">About</a></div>
                     <div class="products nav-item"><a href="#products">Products</a></div>
                     <div class="testimonials nav-item"><a href="#testimonials">Testimonials</a></div>
-                    <div class="contact nav-item"><a href="#contact">Contact</a></div>
                     <div class="hours nav-item"><a href="#hours">Hours</a></div>
                     <div class="location nav-item"><a href="#location">Location</a></div>
-                    <div class="map nav-item"><a href="#map">Map</a></div>
                 </nav>
             </div>
             <div class="slideshow middle">
@@ -98,55 +96,129 @@
                     <div class="image-content">
                         <h1>Pasta with Chicken and Mushroom</h1>
                         <div class="icons">
-                            <a class="icon fas fa-money-check-alt"><p>&nbsp;&nbsp;Rs. 650.00</p></a>
+                            <a class="icon fas fa-money-check-alt">
+                                <p>&nbsp;&nbsp;Rs. 650.00</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="image">
+                <div class="middle-image image">
                     <img src="img/food2.png" alt="">
                     <div class="image-content">
-                        <h1>Image Title</h1>
+                        <h1>Fire and Ice</h1>
                         <div class="icons">
-                            <a href="#" class="icon fas fa-heart"></a>
-                            <a href="#" class="icon fas fa-comment"></a>
-                            <a href="#" class="icon fas fa-share"></a>
+                            <a class="icon fas fa-money-check-alt">
+                                <p>&nbsp;&nbsp;Rs. 450.00</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="image">
+                <div class="middle-image image">
                     <img src="img/food3.png" alt="">
                     <div class="image-content">
-                        <h1>Image Title</h1>
+                        <h1>Chocolate Haven</h1>
                         <div class="icons">
-                            <a class="icon fas fa-money-check-alt"><p>&nbsp;&nbsp;Rs. 650.00</p></a>
+                            <a class="icon fas fa-money-check-alt">
+                                <p>&nbsp;&nbsp;Rs. 650.00</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="image">
+                <div class="middle-image image">
                     <img src="img/food4.png" alt="">
                     <div class="image-content">
-                        <h1>Image Title</h1>
+                        <h1>Chillie Prawn Penne Pasta</h1>
                         <div class="icons">
-                           <a class="icon fas fa-money-check-alt"><p>&nbsp;&nbsp;Rs. 650.00</p></a>
+                            <a class="icon fas fa-money-check-alt">
+                                <p>&nbsp;&nbsp;Rs. 650.00</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="image">
+                <div class="middle-image image">
+                    <img src="img/food5.png" alt="">
+                    <div class="image-content">
+                        <h1>Chicken with Pesto Panini</h1>
+                        <div class="icons">
+                            <a class="icon fas fa-money-check-alt">
+                                <p>&nbsp;&nbsp;Rs. 550.00</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-image image">
                     <img src="img/food6.png" alt="">
                     <div class="image-content">
-                        <h1>Image Title</h1>
+                        <h1>Cheesecake</h1>
                         <div class="icons">
-                            <a class="icon fas fa-money-check-alt"><p>&nbsp;&nbsp;Rs. 650.00</p></a>
+                            <a class="icon fas fa-money-check-alt">
+                                <p>&nbsp;&nbsp;Rs. 450.00</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials-section">
+            <div class="testimonial-section">
+                <div class="inner-width">
+                    <h1>What Our Clients Say</h1>
+                    <div class="testimonial-pics">
+                        <img src="img/p1.png" alt="test-1" class="active">
+                        <img src="img/p2.png" alt="test-2">
+                        <img src="img/p3.png" alt="test-3">
+                        <img src="img/p4.png" alt="test-4">
+                    </div>
+
+                    <div class="testimonial-contents">
+                        <div class="testimonial active" id="test-1">
+                            <p>Nice ambience, although their coffee is poor. Americanos came in large jug-like mugs with no crema, and dishwater-weak like you'd get at a roadside American diner.</p>
+                            <span class="description">Emy</span>
+                        </div>
+
+                        <div class="testimonial" id="test-2">
+                            <p>It was a very calm and quiet cafe located in colombo 3. The paninis were good, we tasted pol sambol & cheese & egg ham and cheese. Beverages were average. Breakfast serves until 11. Maintenance of the cafe should be improved!</p>
+                            <span class="description">Carla</span>
+                        </div>
+
+                        <div class="testimonial" id="test-3">
+                            <p>Visited Coffee and Co in October 2018. Had the Pol Sambol Panini and Carbonara. Both were excellent. Liked it so much that I went back the next day to eat the same thing. The friendly service of the staff certainly added positively to the experience. Love this place and can't wait to visit again.</p>
+                            <span class="description">Thomas</span>
+                        </div>
+
+                        <div class="testimonial" id="test-4">
+                            <p>Food is fabulous! We ordered the Creamy chicken and mushroom pasta(Rs.700) and the pesto and prawn pasta( Rs.700)was out of this world! Caramel macchiato(Rs.670) is jus heavenly,and the peach ice tea (Rs.440)was on point! Its very calm,quiet and relaxing...the staff is attentive and friendly...definitely coming back for more!!!</p>
+                            <span class="description">Monica</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </section>
-        <section id="testimonials" class="testimonials-section">testimonials </section>
-        <section id="contact" class="contact-section">contact </section>
+            <script type="text/javascript">
+                $('.testimonial-pics img').click(function() {
+                    $(".testimonial-pics img").removeClass("active");
+                    $(this).addClass("active");
 
+                    $(".testimonial").removeClass("active");
+                    $("#" + $(this).attr("alt")).addClass("active");
+                });
+            </script>
+        </section>
+        <section id="hours" class="hours-section">
+            <div class="hours-title">
+                <h1>Working hours</h1>
+                <i class="fas fa-clock"></i>
+                <h3>Monday to Friday</h3>
+                <h5>7.30 a.m. - 5.30 p.m.</h5>
+                <h3>Saturday and Sunday</h3>
+                <h5>9.00 a.m. - 7.00 p.m.</h5>
+            </div>
+        </section>
+        <section id="location" class="location-section"><div class="location-title">
+                <h1>Location</h1>
+                <i class="fas fa-map-marker-alt"></i>
+                <h5>37/3, Pedris Rd, Colombo 00300</h5>
+            </div></section>
     </div>
 
 
